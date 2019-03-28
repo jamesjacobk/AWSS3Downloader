@@ -1,0 +1,27 @@
+{
+  "name": "@jamesjacobk/awss3downloader",
+  "version": "1.0.4",
+  "description": "A utility for downloading all objects in an AWS S3 bucket.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Jacob Kurian",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.429.0"
+  },
+  "bin": {
+    "s3dl": "./bin/client.js"
+  },
+  "keywords": [
+    "AWS",
+    "S3",
+    "Download S3",
+    "Buckets",
+    "S3 Objects",
+    "Download S3 Objects",
+    "jamesjacobk"
+  ],
+  "preferGlobal": true
+}
