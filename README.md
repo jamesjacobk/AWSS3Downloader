@@ -1,8 +1,11 @@
 # AWS S3 Downloader
 
 ## Why this package?
-- Because of this: [Issue with downloading s3 objects on Windows](https://github.com/aws/aws-cli/issues/1154)
+- This package is intended to be used when you want to download files from S3 to a Windows machine but the file names contain reserved characters and so, neither the AWS CLI nor the available AWS SDKs download the files. Have a look at this issue: [Issue with downloading s3 objects on Windows](https://github.com/aws/aws-cli/issues/1154)
 
+- Do not upload the files and folders back to S3 after downloading them using this package since the uploaded files will have different names and will exist side-by-side along with the original files (unless you are sure of what you are doing).
+
+## What this package does
 - This package downloads all the objects in a specified S3 bucket into a local directory.
 - While downloading the files, the script replaces reserved characters in the filename for Windows with dashes (-) to prevent issues.
 - It converts the following reserved characters:
