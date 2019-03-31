@@ -44,6 +44,3 @@ s3dl <bucketname> <folder>
 s3dl test-bucket data
 ```
 This will download all the objects in the `test-bucket` bucket into the `data` folder **relative to the current directory**.
-
-### Known issues
-- The 'directory' structure from S3 might not be reflected in the local drive, i.e., the files might appear outside their 'directory' with the directory name prefixed to the name of the file.
